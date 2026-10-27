@@ -201,6 +201,21 @@ function ProjectPage(){
   </div>
 
   <div className="mt-8 rounded-3xl border border-white/10 bg-[#181818] p-5 sm:p-8"><h2 className="font-display text-2xl font-semibold">Informações complementares</h2><p className="mt-2 text-sm text-mist">Canvas, Porter, PESTEL, benchmark, premissas de cálculo e governança do modelo de negócio.</p><details className="mt-5 rounded-2xl border border-white/10 p-4"><summary className="cursor-pointer font-semibold text-brand">Ver análises completas: Canvas, Porter, PESTEL, benchmark, premissas e governança</summary><div className="mt-5 space-y-3">{sections.map((s,i)=><details key={s.title} className="rounded-xl border border-white/10 p-4"><summary className="cursor-pointer font-semibold">{i+1}. {s.title}</summary><div className="mt-3 space-y-3 text-sm leading-relaxed text-mist">{s.paragraphs.map(p=><p key={p}>{p}</p>)}</div></details>)}</div></details><details className="mt-3 rounded-2xl border border-white/10 p-4"><summary className="cursor-pointer font-semibold">Abrir evidências de mercado e contexto</summary><div className="mt-4"><MarketOpportunity /></div></details></div>
+  <section id="acessar-site" aria-label="Acesso à apresentação XP Journey" className="mt-8 overflow-hidden rounded-[30px] border border-brand/30 bg-[radial-gradient(circle_at_top_right,rgba(255,199,0,.12),transparent_50%),#171717] p-6 sm:p-9">
+    <div className="grid items-center gap-7 sm:grid-cols-[minmax(0,1fr)_auto]">
+      <div>
+        <p className="text-xs font-bold uppercase tracking-[.19em] text-brand">XP Journey · apresentação digital</p>
+        <h2 className="mt-3 max-w-xl font-display text-3xl font-bold sm:text-4xl">Explore o projeto no seu celular</h2>
+        <p className="mt-3 max-w-xl text-sm leading-relaxed text-mist">Acesse a experiência completa dos produtos, as premissas financeiras e o dashboard interativo. O QR code direciona para a página Produto e Viabilidade.</p>
+        <a href="https://xp-journey-jqcp.vercel.app/projeto" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center justify-center rounded-full bg-brand px-5 py-3 text-sm font-bold text-black transition hover:bg-brand2">Abrir XP Journey</a>
+        <p className="mt-3 break-all text-xs text-mist">xp-journey-jqcp.vercel.app/projeto</p>
+      </div>
+      <div className="mx-auto rounded-3xl bg-white p-4 shadow-[0_0_45px_rgba(255,199,0,.08)] sm:mx-0">
+        <img src="/qrcode-xp-journey.png" alt="QR code para abrir Produto e Viabilidade do XP Journey" width={228} height={228} loading="lazy" className="block size-[198px] object-contain sm:size-[228px]" />
+      </div>
+    </div>
+  </section>
+
   <div className="mt-8"><ProductTerms /></div>
   <p className="mt-8 text-xs leading-relaxed text-mist">Equipe: Gustavo Mesquita Carapina · Pedro Henrique Lopes Sabainsk · Felipe Condutta Bertoa · Eduardo Cardoso dos Santos. Base: XP Journey — Modelos de Negócios, relatório executivo de outubro de 2026. Números financeiros e indicadores de mercado apresentados como hipóteses e fontes citadas no relatório; não representam validação independente de mercado.</p>
  </main></PageShell>;
